@@ -1,0 +1,13 @@
+Implement a queue using a list in Python. Include the necessary methods such as enqueue, dequeue, and isEmpty.
+ANS:-class Queue:
+    def _init_(self):
+        self.items = []
+        
+    def enqueue(self, item):
+        self.items.append(item)
+        
+    def dequeue(self):
+        return self.items.pop(0)
+        
+    def isEmpty(self):
+        return len(self.items) == 0
